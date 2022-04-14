@@ -1,3 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center  ;
+}
+
 .film-list{
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +17,7 @@
 
 .film{
     width: 250px;
-    background-color: teal;
+    background-color: rgb(8, 21, 80);
     padding: 10px 15px;
     border-radius: 12px;
     color: white;
@@ -19,4 +26,35 @@
 
 .film-img{
     width: 100%;
+}
+
+.year , .type{
+    display: flex;  
+    margin-left: 80px;
+}
+
+
+.btn{
+    border:none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color:rgb(8, 21, 80);
+    color: white;
+}
+
+.btn:disabled{
+    background: rgba(8, 21, 80, 0.603);
+}
+
+.btns{
+    display: flex;
+}
+
+.btn-more , .btn-save{
+    border:none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color:white;
+    color: rgb(2, 12, 56);
+    font-weight: bold;
 }

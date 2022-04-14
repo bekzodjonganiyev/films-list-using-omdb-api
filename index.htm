@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template and Paginnation</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 </head>
 
 <body>
@@ -17,16 +19,25 @@
 
     </ul>
 
-    <button class="prev">Prev</button>
-    <button class="next">Next</button>
+    <button class="btn prev">Prev</button>
+    <button class="btn next">Next</button>
 
     <template class="film-template">
         <li class="film">
             <img class="film-img" src="https://via.placeholder.com/200x300" alt="Template img" width="200" height="300">
-            <h3 class="film-name"></h3>
-            <p class="film-year">2004</p>
-            <p class="film-type">movie</p>
-            <p class="film-id">t4873009</p>
+            <h2 class="film-name"></h2>
+            <div class="year">
+                <p>Year:</p>
+                <p class="film-year">2004</p>
+            </div>
+            <div class="type">
+                <p>Type:</p>
+                <p class="film-type">movie</p>
+            </div>
+            <div class="bnts">
+                <button class="btn-more">More</button>
+                <button class="btn-save">Bookmark</button>
+            </div>
         </li>
     </template>
 
